@@ -30,7 +30,7 @@ function Timeline() {
                 <h3 className="vertical-timeline-element-title">Maitre D’</h3>
                 <h4 className="vertical-timeline-element-subtitle">The Everest - Chicago, IL</h4>
                 <p>
-                    Michilen star restaraunt (No coding but incredible experience).
+                    Michelin  star restaurant (No coding but incredible experience).
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement

@@ -56,23 +56,3 @@ const About = () => {
 }
 
 export default About;
-
-/*
-    const images = [
-        '../../assets/1.png',
-        '../../assets/2.png',
-        '../../assets/3.png',
-        '../../assets/4.png',
-        '../../assets/5.png',
-        '../../assets/6.png',
-        '../../assets/7.png',
-        '../../assets/8.png',
-    ];
-
-
-<div className="each-slide-effect">
-                            <div className='rounded-3xl' style={{ 'backgroundImage': `url(${images[2]})` }}>
-                                <span>Slide 3</span>
-                            </div>
-                        </div>
-*/
