@@ -1,0 +1,72 @@
+@import 'animate.css';
+
+$primary_color: #6B1012;
+$secondary_color: #C1ACA2;
+$blue_text: #2c3e50;
+$white_text: #fff;
+
+:root {
+  --primary: #6B1012;
+  --secondary: #C1ACA2;
+  --blue-text: #2c3e50;
+  --white-text: #fff;
+  --third: #2c2a44;
+}
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  background-color: $secondary_color;
+}
+
+.navbar {
+  background-color: var(--primary);
+}
+
+.navbar-link {
+  color: var(--white-text);
+}
+
+.App-header {
+  background-color: var(--secondary);
+  padding-top: 2em;
+  height: 100vh;
+}
+
+.img-rounded {
+  border-radius: 10%;
+  max-height: 35em;
+}
+
+.c-profile-picture {
+  max-width: 50%;
+}
+
+.picture-row {
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 4em;
+  --fa-animation-duration: 3s;
+  --fa-fade-opacity: 0;
+  --fa-animation-delay: 2s;
+}
+
+.header-caption {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.header-caption-text {
+  text-align: center;
+}
+
+.merry {
+  height: auto;
+  text-align: center;
+}
+
+.c-container {
+  height: 50%;
+}

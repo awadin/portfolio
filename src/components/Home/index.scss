@@ -1,0 +1,38 @@
+@import '../../App.scss';
+
+.main-image {
+    width: 50%;
+}
+
+.skills-buttons {
+    cursor: pointer;
+}
+
+.skills-buttons:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.close-dialog-button {
+    position: absolute !important;
+    right: 1rem;
+    padding: 6px !important;
+}
+
+.divider-line {
+    width: 100%;
+    max-width: 10rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+}
+
+.dialog-text {
+    margin-right: 3em !important;
+    margin-left: 3em !important;
+}
+
+.banner-img {
+    width: 20rem;
+    height: auto;
+}

@@ -1,0 +1,45 @@
+@import '../../App.scss';
+
+.nav-bar {
+    background: $primary_color;
+    width: 4rem;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    min-height: 500px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.logo {
+    color: $secondary_color;
+    font-size: 9pt;
+    width: 4rem;
+    margin-top: 3rem;
+    text-decoration: none !important;
+}
+
+.logo svg {
+    transform: scale(1.75);
+    text-align: center;
+}
+
+a {
+    color: $secondary_color !important;
+    transform: scale(1.75);
+}
+
+a:hover {
+    color: $white_text !important;
+}
+
+a.active {
+    color: $white_text !important;
+}
+
+.smallLinkIcon {
+    transform: scale(1.5);
+    padding: 8px;
+}
