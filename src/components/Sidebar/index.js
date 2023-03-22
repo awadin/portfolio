@@ -23,11 +23,11 @@ const Sidebar = () => (
         </nav>
         <div className="absolute bottom-4 w-full">
             <div className='flex flex-row justify-between'>
-                <a className='smallLinkIcon'>
+                <a href="https://www.linkedin.com/in/aidan-wadin" className='smallLinkIcon'>
                     <FontAwesomeIcon icon={faLinkedin} />
 
                 </a>
-                <a className='smallLinkIcon'>
+                <a href="https://github.com/awadin" className='smallLinkIcon'>
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
             </div>
