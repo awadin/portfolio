@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import React, { useRef } from 'react';
+import Snackbar from '@material-ui/core/Snackbar';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const contactMeArray = 'Contact me'.split('');
-
 
     useEffect(() => {
         let timeoutId = setTimeout(() => {
@@ -23,20 +23,41 @@ const Contact = () => {
 
     const form = useRef();
 
+    const [open, setOpen] = React.useState(false);
+
+    const openSnackBar = () => {
+        setOpen(true);
+    }
+
+    const closeSnackbar = () => {
+        setOpen(false);
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_mjs73n3', 'template_vtand4v', form.current, 'FBC1Ecz_zlWx4PaA5')
             .then((result) => {
-                console.log(result.text);
+                openSnackBar();
             }, (error) => {
                 console.log(error.text);
             });
+
     };
 
     return (
         <>
             <div className='container contact-page'>
+                <Snackbar
+                    anchorOrigin={{
+                        vertical: "top",
+                        horizontal: "center"
+                    }}
+                    open={open}
+                    onClose={closeSnackbar}
+                    autoHideDuration={3000}
+                    message="Message Successfully Sent!"
+                />
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters

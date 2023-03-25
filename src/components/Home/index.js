@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { TypeAnimation } from "react-type-animation";
 import AnimatedLetters from "../AnimatedLetters";
 import { skills } from "../../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +12,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import Dialog from '@material-ui/core/Dialog';
 import { faX } from '@fortawesome/free-solid-svg-icons';
-import { Divider, IconButton } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
 import reactImage from '../../assets/e.png';
 import schoolLogo from '../../assets/mcgill.png';
 import netsfereLogo from '../../assets/netsfere.png';
@@ -29,11 +28,6 @@ const Home = () => {
     const nameArray = 'AIDAN WADIN'.split('');
     const subTitleArray = 'Software Developer - Cognitive Scientist'.split('');
 
-    const titleArray = 'Software engineer,'.split('');
-    const title2Array = 'Web developer,'.split('');
-    const title3Array = 'Cognitive scientist,'.split('');
-    const tagLineArray = 'And your future colleague!'.split('');
-
     useEffect(() => {
         let timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover')
@@ -45,8 +39,6 @@ const Home = () => {
     }, []);
 
     const [dialogState, setOpen] = useState({ opened: false, title: '', image: 'react', icon: '', text: '' });
-
-    let dialogData = {};
 
     const handleClickOpen = (dialogType) => {
         switch (dialogType) {
@@ -237,108 +229,3 @@ const Home = () => {
 }
 
 export default Home;
-
-// text: ' During my final semseter at McGill, I took a web development course. The last month of the course was a collaborative project consisting of up to 3 people per group. The task was to design a website of our choice from the ground up. We chose to do an online marketplace. Using a combination of Django, Python, Redis, Websocket, HTML/CSS, Bootstrap, and Javascript, we built a working online marketplace complete with the ability to create new accounts, login/logout, post/edit/delete items for sale, as well a fully functioning checkout pipeline complete with Stripe integration.'
-
-
-{/* <div className="container flex flex-row">
-            <div className="main-content">
-                <div className="title-container grid gap-4 grid-cols-1 lg:grid-cols-2">
-                    <div className="title-text self-center xs:text-center sm:text-center lg:text-left">
-                        <TypeAnimation
-                            className="code-type"
-                            sequence={[
-                                '<h1>',
-                                100,
-                            ]}
-                            wrapper="h6"
-                            cursor="false"
-                        />
-                        <h1>
-                            <span className={`${letterClass} _5`}>H</span>
-                            <span className={`${letterClass} _6`}>i!</span>
-                            <br />
-                            <AnimatedLetters
-                                letterClass={letterClass}
-                                strArray={nameArray}
-                                idx={8}
-                            />
-                            <br />
-                            <AnimatedLetters
-                                letterClass={letterClass}
-                                strArray={titleArray}
-                                idx={25}
-                            />
-                            <br />
-                            <AnimatedLetters
-                                letterClass={letterClass}
-                                strArray={title2Array}
-                                idx={45}
-                            />
-                            <br />
-                            <AnimatedLetters
-                                letterClass={letterClass}
-                                strArray={title3Array}
-                                idx={60}
-                            />
-                            <br />
-                            <AnimatedLetters
-                                letterClass={letterClass}
-                                strArray={tagLineArray}
-                                idx={80}
-                            />
-                        </h1>
-                        <TypeAnimation
-                            className="code-type"
-                            sequence={[
-                                '</h1>',
-                                100,
-                            ]}
-                            wrapper="h6"
-                            cursor="false"
-                        />
-                    </div>
-                    <div className="grid place-items-center title-image">
-                        <img src={professional} alt="myself" className="rounded-3xl main-image" />
-                    </div>
-                </div>
-                <div className="skills">
-                    <div className="container mx-auto">
-                        <div className="text-center mb-10 mt-10">
-                            <h4 className="font-medium title-font">
-                                My Technical Skillset Includes (but most certianly not limted to):
-                            </h4>
-                        </div>
-                        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:pb-8 -mx-2">
-                            {skills.map((skill) => (
-                                <div key={skill.title} className="p-2 sm:w-1/2 w-full">
-                                    <div onClick={() => handleClickOpen(skill.title)} className="bg-gray-800 rounded flex p-4 h-full justify-between skills-buttons">
-                                        <span className="title-font font-medium text-white self-center">
-                                            {skill.title}
-                                        </span>
-                                        <span className="title-font font-medium text-white">
-                                            <FontAwesomeIcon icon={fab[skill.icon]} size="2x" />
-                                        </span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <Dialog open={dialogState.opened} onClose={handleClose} fullWidth={true} maxWidth='sm'>
-                            <DialogTitle className="flex flex-row space-between">
-                                {dialogState.title}
-                                <IconButton onClick={handleClose} className="close-dialog-button">
-                                    <FontAwesomeIcon icon={faX} size="xs" />
-                                </IconButton>
-                            </DialogTitle>
-                            <DialogContent>
-                                <img src={dialogState.image} alt="Dialog Image" />
-                                <DialogContentText>
-                                    {dialogState.text}
-                                </DialogContentText>
-                            </DialogContent>
-                        </Dialog>
-                    </div>
-                </div>
-                <Link to="/contact">You Found Me!</Link>
-            </div>
-        </div> */}
