@@ -1,7 +1,7 @@
 {
   "name": "dev-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://awadin.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",

@@ -33,5 +33,5 @@ export const skills = [
     },
 ]
 
-//Php? - faPhp
-//bash - faMandalorian
+//Php?
+//bash?
