@@ -30,7 +30,7 @@ const About = () => {
                 <div className='header-text'>
                     <h1 className='mb-4'>About Me</h1>
                     <div className='h-2/3 flex flex-col justify-between'>
-                        <p className='mb-4'>I am a McGill University graduate currently working at Netsfere. I work as a software engineer to architect and develop
+                        <p className='mb-4'>I am a McGill University graduate that recently left my position as a software engineer at Netsfere after 4 years. I worked as a software engineer to architect and develop
                             solutions for a web‑based enterprise management system used by large international telecommunications companies. My experience within
                             both academic and work environments has honed my abilities to pick up new concepts quickly, enhanced my attention to detail, and elevated
                             my leadership skills.
