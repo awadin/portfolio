@@ -10,7 +10,7 @@ function Timeline() {
             <VerticalTimelineElement
                 contentStyle={{ background: 'rgb(52 115 208)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(52 115 208)' }}
-                date="Aug. 2020 - Present"
+                date="Aug. 2020 - Mar. 2024"
                 iconStyle={{ background: 'rgb(52 115 208)', color: '#fff' }}
                 icon={<FontAwesomeIcon icon={faCode} />}
             >
@@ -23,7 +23,7 @@ function Timeline() {
             <VerticalTimelineElement
                 contentStyle={{ background: 'rgb(52 115 208)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(52 115 208)' }}
-                date="April 2019 - Aug. 2019"
+                date="Apr. 2019 - Aug. 2019"
                 iconStyle={{ background: 'rgb(52 115 208)', color: '#fff' }}
                 icon={<FontAwesomeIcon icon={faMartiniGlass} />}
             >
@@ -36,7 +36,7 @@ function Timeline() {
             <VerticalTimelineElement
                 contentStyle={{ background: 'rgb(192 81 81)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(192 81 81)' }}
-                date="Jan. 2018 - April 2018"
+                date="Jan. 2018 - Apr. 2018"
                 iconStyle={{ background: 'rgb(192 81 81)', color: '#fff' }}
                 icon={<FontAwesomeIcon icon={faGraduationCap} />}
             >
@@ -49,7 +49,7 @@ function Timeline() {
             <VerticalTimelineElement
                 contentStyle={{ background: 'rgb(192 81 81)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(192 81 81)' }}
-                date="Jan. 2018 - April 2018"
+                date="Sept. 2016 - June 2020"
                 iconStyle={{ background: 'rgb(192 81 81)', color: '#fff' }}
                 icon={<FontAwesomeIcon icon={faGraduationCap} />}
             >

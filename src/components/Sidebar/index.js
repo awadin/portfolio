@@ -8,9 +8,8 @@ const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo flex flex-col gap-2' to='/'>
             <FontAwesomeIcon icon={faTerminal} />
-            <p className='subtitle'>Aidan Wadin</p>
         </Link>
-        <nav className="flex flex-col mt-32 space-y-12">
+        <nav className="flex flex-col mt-60 space-y-12">
             <NavLink className="self-center" exact="true" to="/">
                 <FontAwesomeIcon icon={faHome} />
             </NavLink>
